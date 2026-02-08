@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Andreea Sandu</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .nav-blur { 
+            background: rgba(15, 23, 42, 0.9); 
+            backdrop-filter: blur(12px); 
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Cardurile de contact */
+        .contact-card {
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+            background: rgba(30, 41, 59, 0.7);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 20px;
+            color: #3b82f6;
+            font-size: 28px;
+            margin-bottom: 24px;
+            transition: 0.3s;
+        }
+
+        .contact-card:hover .icon-box {
+            background: #3b82f6;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .footer-line {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 nav-blur border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase">Andreea<span class="text-blue-500">S.</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">Acasă</a>
+                <a href="about.html" class="text-slate-400 hover:text-white transition">Despre</a>
+                <a href="portfolio.html" class="text-slate-400 hover:text-white transition">Portofoliu</a>
+                <a href="contact.html" class="text-white border-b-2 border-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20" data-aos="fade-down">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Hai să <span class="gradient-text">lucrăm</span> împreună.</h1>
+                <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    Dacă ești în căutarea unui developer pasionat de Python și Django, mă poți contacta oricând pe platformele de mai jos.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <a href="mailto:sandu.andreea2212@gmail.com" class="contact-card p-10 rounded-[2.5rem] flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-slate-400 text-sm mb-6">sandu.andreea2212@gmail.com</p>
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Trimite un Mail →</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank" class="contact-card p-10 rounded-[2.5rem] flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LinkedIn</h3>
+                    <p class="text-slate-400 text-sm mb-6">Networking și colaborări B2B.</p>
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Vezi Profilul →</span>
+                </a>
+
+                <a href="https://github.com/SanduAndreea22" target="_blank" class="contact-card p-10 rounded-[2.5rem] flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">GitHub</h3>
+                    <p class="text-slate-400 text-sm mb-6">Contribuții și proiecte personale.</p>
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Vezi Codul →</span>
+                </a>
+
+            </div>
+
+            <div class="mt-20 p-10 rounded-[2.5rem] bg-slate-900/50 border border-slate-800 text-center" data-aos="zoom-in">
+                <p class="text-slate-500 text-sm mt-2 italic">Disponibilă pentru colaborări</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 footer-line text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2026 Andreea Sandu | Built with Passion for Coding</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

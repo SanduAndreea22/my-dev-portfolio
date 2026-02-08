@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu | Andreea Sandu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #0f172a; /* Fundalul închis din imaginea ta */
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .nav-blur { 
+            background: rgba(15, 23, 42, 0.9); 
+            backdrop-filter: blur(12px); 
+        }
+        /* Cardurile cu efect de sticlă și bordură subtilă */
+        .project-card {
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .project-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tech-tag {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2px 10px;
+            border-radius: 99px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 nav-blur border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase">Andreea<span class="text-blue-500">S.</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">Acasă</a>
+                <a href="about.html" class="text-slate-400 hover:text-white transition">Despre</a>
+                <a href="portfolio.html" class="text-white border-b-2 border-blue-500">Proiecte</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto" data-aos="fade-down">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Proiecte <span class="gradient-text">Full-Stack</span></h1>
+            <p class="text-slate-400 text-lg md:text-xl">O selecție de aplicații web dezvoltate cu Django, Python și tehnologii moderne de Frontend.</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+            <div class="project-card p-8 rounded-3xl" data-aos="fade-up">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="tech-tag">Django</span><span class="tech-tag">Chart.js</span><span class="tech-tag">PostgreSQL</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 italic">MyBudget – Full-Stack Financial Dashboard</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Aplicație completă pentru managementul finanțelor. Include vizualizare de date cu Chart.js, interfață Glassmorphism și management de tranzacții.
+                </p>
+                <div class="flex justify-between items-center">
+                    <a href="https://my-budget-or3r.onrender.com" target="_blank" class="text-blue-400 font-bold hover:underline">Live Link →</a>
+                </div>
+            </div>
+
+            <div class="project-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="tech-tag">Python</span><span class="tech-tag">Django</span><span class="tech-tag">Ticketing</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 italic">platform_tickets</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Sistem de Ticketing Platform dezvoltat integral în Django, conceput special pentru a gestiona eficient fluxurile de tichete și solicitări pentru evenimente.
+                </p>
+                <a href="https://platform-tickets.onrender.com" target="_blank" class="text-blue-400 font-bold hover:underline">Vezi Platforma →</a>
+            </div>
+
+            <div class="project-card p-8 rounded-3xl" data-aos="fade-up">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="tech-tag">E-Commerce</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">Modular</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 italic">Django E-Commerce Platform</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Platformă cu catalog dinamic, variante multiple de produse, coș în timp real și arhitectură modulară pentru plăți și cupoane de reducere.
+                </p>
+                <a href="https://django-ecommerce-c2s6.onrender.com/" target="_blank" class="text-blue-400 font-bold hover:underline">Proiect Live →</a>
+            </div>
+
+            <div class="project-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="tech-tag">Django</span><span class="tech-tag">UI/UX</span><span class="tech-tag">User Focus</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 italic">Emotional Planner</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Ajută utilizatorii să își organizeze ziua și să reflecteze seara. Include planificare orar, note și un design curat și intuitiv.
+                </p>
+                <a href="https://day-planner-e2sv.onrender.com/" target="_blank" class="text-blue-400 font-bold hover:underline">Deschide Planner →</a>
+            </div>
+
+            <div class="project-card p-8 rounded-3xl" data-aos="fade-up">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="tech-tag">Selenium</span><span class="tech-tag">Behave</span><span class="tech-tag">POM</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 italic">BDD Automation Framework</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Framework de testare automată profesional. Utilizează Page Object Model și metodologia BDD pentru testarea fluxurilor de login și catalog.
+                </p>
+                <a href="https://github.com/SanduAndreea22/BDD_AUTO_PY" target="_blank" class="text-blue-400 font-bold hover:underline">Vezi GitHub Repo →</a>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2026 Andreea Sandu. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
+
